@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+/**
+ *
+ *
+ */
+ public class ChatBot
+ {	
+ 	/**
+ 	 *This is the main method that the java interpreter calls
+ 	 *@param args This is a command line argument
+ 	 */
+ 	 public static void main (String[] args)
+ 	 {
+ 	 	int z = 0;
+ 	 	while (z == 0)
+		{	//create/construct a Scanner object do
+			Scanner x = new Scanner(System.in);//system.in means input from the keyboard
+			//x is the name of the scanner
+			System.out.print("Please enter your name: ");
+			String name = x.nextLine();//goes to the next newline in your buffer and returns it
+			if (name.equals("Bye"))
+			{
+				z = 1;
+			}
+			else
+			{
+				System.out.print("Hi " + name + "!. How are you doing today?: ");
+				String input = x.nextLine(); //recycling input, you do not want to redefine 'String', nextLine includes newLine character
+				if (input.equals("Bye"))
+				{
+					z = 1;
+				}
+				else
+				{
+					System.out.println("Your answer is " + "'" + input + "'");
+					System.out.print("How old are you?: ");
+					int age = x.nextInt();
+					if(age > 40) 	 	
+					{
+						System.out.println(name + ", you are old!");
+					}
+					else
+					{
+						System.out.println(name +", you are young!");
+					}
+					System.out.print("How tall are you: ");
+					double height = x.nextDouble();
+					if (height >= 6.0)
+					{
+						System.out.println(name + ", you are tall!");
+					}
+					else if (height >= 5.0)
+					{
+						System.out.println(name + ", you're average!");
+					}
+					else
+					{
+						System.out.println(name + ", you are short!");
+					}
+					//will get rid of the newLine char form the previous input
+					x.nextLine();
+					System.out.print("What is your favorite color: ");
+					String color = x.nextLine();
+					if (color.equals("Bye"))
+					{
+						z = 1;
+					}
+					else
+					{
+						System.out.println(color + " is your favorite color!");
+					}
+				}
+			}
+		}
+ 	 }
+ 	 
+ 	 
+}
