@@ -1,7 +1,7 @@
 /**
 *This method simulates a Monty Hall game and returns
 *1 if switch win and returns 0 otherwise
-*<description of algorithm
+*
 */
 
 public class MontyHallSimulation
