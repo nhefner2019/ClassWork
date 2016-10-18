@@ -61,13 +61,14 @@ public class Exercise
 	*/
 	public static boolean palindromeRecursive(String s)
 	{
-		if(s.charAt(0) != s.charAt(s.length()-1))
-		{
-			return false;
-		}
-		else if(s.length() == 0 || s.length() == 1)
+		
+		if(s.length() == 0 || s.length() == 1)
 		{
 			return true;
+		}
+		else if(s.charAt(0) != s.charAt(s.length()-1))
+		{
+			return false;
 		}
 		return palindromeRecursive(s.substring(1,s.length()-1));
 	}
@@ -100,14 +101,15 @@ public class Exercise
 	*/
 	public static boolean noCharRecursive(String s)
 	{
-		if(!s.substring(0,1).equals(s.substring(s.length()-1)))
-		{
-			return false;
-		}
-		else if(s.length() == 0 || s.length() == 1)
+		if(s.length() == 0 || s.length() == 1)
 		{
 			return true;
 		}
+		else if(!s.substring(0,1).equals(s.substring(s.length()-1)))
+		{
+			return false;
+		}
+		
 		return palindromeRecursive(s.substring(1,s.length()-1));
 	}
 	/**
