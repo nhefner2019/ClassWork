@@ -232,12 +232,13 @@ public class ticTac
 				if(board[j][i].equals(symbol))
 					counter ++;
 			}
+			if(counter == n)
+			return true;
+			
 			counter = 0;
 		}
-		if(counter == n)
-			return true;
-		else
-			return false;
+		
+		return false;
 	}
 	
 	/**
