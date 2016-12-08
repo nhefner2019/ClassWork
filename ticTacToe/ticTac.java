@@ -203,12 +203,14 @@ public class ticTac
 				if(board[i][j].equals(symbol))
 					counter ++;
 			}
-			counter = 0;
-		}
-		if(counter == n)
+			if(counter == n)
 			return true;
-		else
-			return false;
+			
+			counter = 0;
+			
+		}
+		
+		return false;
 	}
 	
 	/**
