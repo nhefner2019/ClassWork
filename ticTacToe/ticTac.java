@@ -334,7 +334,7 @@ public class ticTac
 	public static String errorHandlingSymbols(String userSymbol)
 	{
 		Scanner kb = new Scanner(System.in);
-		if (userSymbol.length() < 1)
+		if (userSymbol.equals(""))
 		{
 			System.out.print("Your symbol is not one character long, please re-pick:");
 			String userPick = kb.nextLine();
