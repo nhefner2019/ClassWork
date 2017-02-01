@@ -1,67 +1,63 @@
-
-
-
-
-
-
-
-
-
 public class Carton
 {
 
   //class fields (encapsulation)
-	private Egg e1;
-	private Egg e2;
+	private Egg[] cart;
 	
 	public Carton()
 	{
-		this(new Egg(), new Egg(3, 4));
+		cart = new Egg[12];
+		for (int i = 0; i < 12; i++)
+		{
+			cart[i] = new Egg();
+		}
 	}
-	
-	public Carton(Egg a, Egg b)
+  
+  public Carton(int x, int y)
 	{
-		e1 = a;
-		this.e2 = b;
+		cart = new Egg[12];
+		for (int i = 0; i < 12; i++)
+		{
+			cart[i] = new Egg(x, y);
+		}
 	}
-	
+  
+   public Carton(int x, int y, String s)
+	{
+		cart = new Egg[12];
+		for (int i = 0; i < 12; i++)
+		{
+			cart[i] = new Egg(x, y, s);
+		}
+	}
+  
+
 	//accessors
-	public Egg getE1()
-	{
-		return e1;
-	}
-	
-	public Egg getE2()
-	{
-		return e2;
-	}
-	
-	
+	public Egg getEggi(int i)
+  	{
+  	return cart[i];
+  	}
+  
+  
 	//modifiers
 	
-	public void setE1(Egg e)
-	{
-		e1 = e;
-	}
-	
-	public void setE2(Egg e)
-	{
-		e2 = e;
-	}
+  	public void setEggi(int i, Egg e)
+  	{
+  		cart[i] = e;	
+  	}
+  
+
 	
 	//toString method
 	
 	public String toString()
 	{
-		return (e1.toString() + e2.toString());
+  		String output = "";
+  		for (int i = 0; i < 12; i++)
+   	 	{
+    		output+= cart[i].toString() + ", ";
+  	 	}
+   	 	return output;
 	}
 	
-	//other methods
-	public String getName()
-	{
-		return e1.getName() + e2.getName();
-	}
-	
-  
-
 }

@@ -16,9 +16,11 @@ public class EggRunner
 		
 		System.out.println(Egg.getNumEggs());
 		
-		Carton c1 = new Carton();
+		Carton c1 = new Carton(2, 6);
 		System.out.println(c1);
-		System.out.println(c1.getE1());
-		System.out.println(c1.getE2());
+		System.out.println(c1.getEggi(4));
+    	System.out.println(c1.getEggi(3));
+   		c1.setEggi(4, c1.getEggi(3));
+   		System.out.println(c1.getEggi(4));
 	}
 }
