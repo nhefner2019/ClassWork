@@ -1,5 +1,9 @@
 public class EggRunner
 {
+		/*
+  * Insentiates Eggs and prints their weights and names
+  * through calling upon Egg and Carton classes.
+  */
 	public static void main(String[] args)
 	{
 		
