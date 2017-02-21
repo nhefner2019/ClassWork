@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Truck()
+comment1.params=w\ s\ d
+comment1.target=Truck(int,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=int\ getDoors()
+comment3.params=d
+comment3.target=void\ setDoors(int)
+comment4.params=w\ s\ d
+comment4.target=void\ setDescription(int,\ java.lang.String,\ int)
+comment5.params=t
+comment5.target=boolean\ equals(Truck)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment7.params=
+comment7.target=java.lang.String\ costRange()
+numComments=8
