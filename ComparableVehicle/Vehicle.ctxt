@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getNumWheels()
+comment1.params=
+comment1.target=int\ getMaxSpeed()
+comment2.params=
+comment2.target=int\ getMpg()
+comment3.params=n
+comment3.target=int\ compareTo(Vehicle)
+numComments=4

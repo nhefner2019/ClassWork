@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getHBLength()
+comment1.params=m
+comment1.target=int\ compareTo(Motorcycle)
+numComments=2
